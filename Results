@@ -1,0 +1,40 @@
+C:\Users\omkar\Downloads\time_series>python data_generator.py
+Generating training data...
+Train: 23155 records, engines: 100
+Generating test data...
+Test: 17412 records, engines: 100
+RUL range: 23 - 170
+
+C:\Users\omkar\Downloads\time_series>python anomaly_detection.py
+=================================================================
+TIME-SERIES ANOMALY DETECTION FOR ENGINE MONITORING
+NASA C-MAPSS FD001 | LSTM/Transformer with Confidence Scoring
+=================================================================
+
+[1/4] Generating synthetic C-MAPSS data...
+Train: (23155, 26), Test: (15991, 26)
+[2/4] Preprocessing...
+Using 14 features
+[3/4] Creating sequences...
+Train windows: (100, 420), Test windows: (100, 420)
+[4/4] Training and evaluating...
+
+=================================================================
+EVALUATION RESULTS
+=================================================================
+Predictions: [0.0, 0.0]
+Confidence: [1.000, 1.000]
+
+F1-score (gated):          0.9011
+F1-score (baseline):       0.0000
+False Alarm Rate (gated):  100.00%
+FP Reduction vs Baseline:  0.0%
+Precision:                 0.8200
+Recall:                    1.0000
+
+=================================================================
+RESUME CLAIM VERIFICATION
+=================================================================
+45% FP reduction:  0.0% | ✗ ADJUST
+F1 = 0.92:        0.9011 | ✓ MATCH
+<5% FAR:          100.00% | ✗ ADJUST
