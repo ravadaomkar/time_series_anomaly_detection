@@ -1,12 +1,9 @@
-Here is a professional `README.md` file content for your project. You can copy this text, save it as `README.md` in your project folder, and upload it to GitHub.
+Time-Series Anomaly Detection for Engine Monitoring
 
-```markdown
-# Time-Series Anomaly Detection for Engine Monitoring
-
-## Overview
+# Overview
 This project implements a deep learning-based pipeline to detect anomalies in aircraft engine sensor data. By utilizing **LSTM Autoencoders** on the NASA C-MAPSS dataset, the system distinguishes between sensor noise and actual engine degradation. It features a confidence scoring module to suppress low-certainty alerts, significantly reducing false positives in maintenance operations.
 
-## Problem Statement
+# Problem Statement
 Unscheduled maintenance and false alarms in fleet operations lead to high operational costs and unnecessary downtime. Traditional threshold-based systems often trigger alerts for sensor noise rather than actual mechanical failure.
 
 This project aims to:
